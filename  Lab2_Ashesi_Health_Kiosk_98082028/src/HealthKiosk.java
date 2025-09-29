@@ -200,7 +200,7 @@ public class HealthKiosk {
 
       // --- Task 5
       String summary = "Summary: " + service + " | ID = " + id;
-      if(service.equals("TRIAGE")) {
+      if(service.equals("Triage Desk")) {
           summary += " | BMI = " + metricValue;
       }
       summary += " | Code = " + displayCode;
