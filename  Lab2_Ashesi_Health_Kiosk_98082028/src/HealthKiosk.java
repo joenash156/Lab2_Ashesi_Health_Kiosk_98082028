@@ -1,3 +1,6 @@
+// Project: Ashesi Health Kiosk
+// Author: Joshua Adjei
+// Date: Sep 28, 2025
 
 import java.util.Scanner;
 
@@ -105,6 +108,7 @@ public class HealthKiosk {
             System.out.printf("BMI: %.1f  Category: %s %n", bmiRounded, bmicategory);
 
             metricValue = bmiRounded;
+            break;
 
 
           } // End of case for option 1
@@ -118,6 +122,7 @@ public class HealthKiosk {
             int tablets = (int) (Math.ceil(dosage / 250.0));
 
             System.out.printf("Tablets required: %d %n", tablets);
+            break;
 
     
           }
@@ -135,8 +140,13 @@ public class HealthKiosk {
           System.out.printf("sin angle: %.3f %n", sinValue);
           System.out.printf("cos angle: %.3f %n", cosValue);
 
-        }
-          // add default
+          break;
+
+          }
+          default -> {
+            System.out.println("Invalid input");
+            return;
+          }
         }
         System.out.println(); // Print a new line
 
